@@ -1,5 +1,7 @@
 package com.servlet;
 
+import org.springframework.web.servlet.DispatcherServlet;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -15,7 +17,9 @@ public class ErrorHandler extends HttpServlet {
     @Override
     protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         doGet(req, resp);
+        DispatcherServlet ds;
     }
+
 
     // Method to handle GET method request.
         public void doGet(HttpServletRequest request,
